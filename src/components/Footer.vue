@@ -54,7 +54,6 @@ export default {
 .copy {
   color: #d3d3d3;
   font-size: 14px;
-  margin: 50px 0 10px;
 }
 @media screen and (max-width: 997px) {
   .title {
