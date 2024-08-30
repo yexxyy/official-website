@@ -5,8 +5,8 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>888-888-888
-          <span class="glyphicon glyphicon-envelope"></span>xxx@163.com
+          <!-- <span class="glyphicon glyphicon-earphone"></span>888-888-888 -->
+          <span class="glyphicon glyphicon-envelope"></span>contact@heexin.cn
           <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
         </div>
         <div class="shejiao pull-right">
@@ -92,30 +92,30 @@ export default {
           path: "/",
           children: []
         },
-        {
-          name: "软件产品",
-          path: "/software",
-          children: [
-            {
-              name: "智能小镇管理系统",
-              path: "/software/smartTown"
-            },
-            {
-              name: "大数据管理系统",
-              path: "/software/bigData"
-            }
-          ]
-        },
+        // {
+        //   name: "软件产品",
+        //   path: "/software",
+        //   children: [
+        //     {
+        //       name: "智能小镇管理系统",
+        //       path: "/software/smartTown"
+        //     },
+        //     {
+        //       name: "大数据管理系统",
+        //       path: "/software/bigData"
+        //     }
+        //   ]
+        // },
         {
           name: "相关服务",
           path: "/service",
           children: []
         },
-        {
-          name: "新闻动态",
-          path: "/newsinformation",
-          children: []
-        },
+        // {
+        //   name: "新闻动态",
+        //   path: "/newsinformation",
+        //   children: []
+        // },
         {
           name: "公司介绍",
           path: "/companyintroduction",

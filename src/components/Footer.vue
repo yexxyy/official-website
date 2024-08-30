@@ -3,16 +3,17 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
-    <p class="title">公司企业网站模板</p>
-    <p class="address_tel_fax">
-      <span>地址：公司地址</span>
-      <span>Tel：888-888-888</span>
-    </p>
+    <!-- <p class="title">成都云从本图科技有限公司</p> -->
+    
     <p class="email_wx">
-      <span>邮箱：xxx@163.com</span>
-      <span>微信号：xxx</span>
+      <span>邮箱：contect@heexin.cn</span>
+      <!-- <span>微信号：xxx</span> -->
     </p>
-    <p class="copy">Copyright &copy; 2018 - {{ new Date().getFullYear() }} 公司名称</p>
+    <p class="address_tel_fax">
+      <span>地址：中国（四川）自由贸易试验区成都高新区交子北一路88号1栋2单元14层1413号</span>
+      <!-- <span>Tel：888-888-888</span> -->
+    </p>
+    <p class="copy">Copyright &copy; 2024 - {{ new Date().getFullYear() }} 成都云从本图科技有限公司 <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024094724号-2</a></p>
   </div>
 </template>
 <script>
