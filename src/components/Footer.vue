@@ -13,7 +13,7 @@
       <span>地址：中国（四川）自由贸易试验区成都高新区交子北一路88号1栋2单元14层1413号</span>
       <!-- <span>Tel：888-888-888</span> -->
     </p>
-    <p class="copy">Copyright &copy; 2024 - {{ new Date().getFullYear() }} 成都云从本图科技有限公司 <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024094724号-2</a></p>
+    <p class="copy">Copyright &copy; 2024 - {{ new Date().getFullYear() }} 成都云从本图科技有限公司 <a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration:none; color: unset">蜀ICP备2024094724号-2</a></p>
   </div>
 </template>
 <script>
