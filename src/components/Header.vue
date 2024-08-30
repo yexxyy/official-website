@@ -16,13 +16,13 @@
       </div>
     </div>
     <!-- 电脑导航 -->
-    <div class="header-nav container hidden-xs">
+    <!-- <div class="header-nav container hidden-xs"> -->
       <!-- 导航logo -->
-      <div class="header-nav-logo">
+      <!-- <div class="header-nav-logo">
         <img src="@/assets/img/logo_black.png">
-      </div>
+      </div> -->
       <!-- 导航内容 -->
-      <ul class="header-nav-wrapper">
+      <!-- <ul class="header-nav-wrapper">
         <li
           v-for="(item,index) in navList"
           :key="index"
@@ -40,8 +40,8 @@
             </dt>
           </dl>
         </li>
-      </ul>
-    </div>
+      </ul> -->
+    <!-- </div> -->
     <!-- 手机导航 -->
     <div class="header-nav-m container-fuild visible-xs">
       <div class="header-nav-m-logo">
@@ -84,53 +84,14 @@ export default {
   data() {
     return {
       navIndex: sessionStorage.getItem('navIndex') ? sessionStorage.getItem('navIndex') : 0,
-      menuName: "首页",
+      menuName: "成都云从本图科技有限公司",
       menuClass: "glyphicon glyphicon-menu-down",
       navList: [
         {
-          name: "首页",
+          name: "成都云从本图科技有限公司",
           path: "/",
           children: []
         },
-        // {
-        //   name: "软件产品",
-        //   path: "/software",
-        //   children: [
-        //     {
-        //       name: "智能小镇管理系统",
-        //       path: "/software/smartTown"
-        //     },
-        //     {
-        //       name: "大数据管理系统",
-        //       path: "/software/bigData"
-        //     }
-        //   ]
-        // },
-        {
-          name: "相关服务",
-          path: "/service",
-          children: []
-        },
-        // {
-        //   name: "新闻动态",
-        //   path: "/newsinformation",
-        //   children: []
-        // },
-        {
-          name: "公司介绍",
-          path: "/companyintroduction",
-          children: []
-        },
-        {
-          name: "工作机会",
-          path: "/jobchance",
-          children: []
-        },
-        {
-          name: "联系我们",
-          path: "/contactus",
-          children: []
-        }
       ]
     };
   },
@@ -158,10 +119,8 @@ export default {
 }
 #header .header-top {
   height: 50px;
-  color: #fff;
   font-size: 12px;
   line-height: 50px;
-  background: #474747;
 }
 /* 顶部的图标 */
 #header .header-top span {

@@ -14,27 +14,27 @@
           </div>
         </div>
         <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-pagination"></div> -->
 
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
       </div>
     </div>
     <!-- 大数据管理系统 -->
     <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
-          <img class="img-responsive" src="@/assets/img/img1.png" alt="云从户外小程序">
+          <img class="img-responsive" src="@/assets/img/img1.png" alt="成都云从本图科技有限公司">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6">
           <h2 class="bigData-title">
-            云从户外小程序
+            成都云从本图科技有限公司
             <!-- <small>/ Big Data Management System</small> -->
           </h2>
-          <p></p>
-          <p>小程序主要从事内容为用于户外活动预约报名以及相关信息查询使用。</p>
-          <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2>
+          <p>是一家以科技创意为核心的技术服务公司, 聚集了众多对软件开发和界面设计有独特创意的高端人才, 致力于为企业提供软件开发, 网站建设, 网页设计, IT外包, 手机应用开发, 互联网营销, 微信平台开发等解决方案。</p>
+          <p>在过去的服务案例中，我们成功帮助众多企业通过数字化、AI和定制开发软件，降低运营成本，提升市场表现。未来，云从本图将继续秉承专业、创新、务实的服务理念，不断提升自身的服务水平和能力，为更多的企业提供优质、高效的服务，助力企业实现数字化的可持续发展。</p>
+          <!-- <h2 class="bigData-device">PC/PAD/Phone &nbsp; 全设备支持</h2> -->
           <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
         </div>
       </div>
@@ -44,7 +44,7 @@
       <div class="container contactUs-container wow slideInUp">
         <h1>您身边的IT专家</h1>
         <h3>7x24小时提供出色的IT服务</h3>
-        <button
+        <!-- <button
           class="btn btn-default btn-sm"
           onmouseleave="this.style.borderColor='#ffffff'; this.style.backgroundColor='#ffffff'; this.style.color='#3f3f3f';"
           onmouseenter="this.style.backgroundColor='transparent'; this.style.borderColor='#ffffff'; this.style.color='#ffffff';"
@@ -53,41 +53,35 @@
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> -->
       </div>
+    </div>
+     <div id="Service" class="conatiner-fuild">
+        <div class="container text-center">
+            <h3>我们的服务</h3>
+            <p style="color:#b2b2b2">The Best Service You Never See</p>
+        </div>
+        <div class="container">
+            <div class="Service-container row">
+                <div class="Service-item col-xs-12 col-sm-6 col-md-3 wow slideInUp" 
+                v-for="(item,index) in serviceList" :key="index" @click="ServiceClick(item.id)">
+                    <div class="Service-item-wrapper">
+                        <div class="Service-item-top">
+                            <h4>{{item.title}}</h4>
+                            <i></i>
+                            <p>{{item.eng_title}}</p>
+                        </div>
+                        <div class="Service-item-img">
+                            <img :src="item.img" alt="服务">
+                        </div>
+                        <div class="Service-item-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
  
-    <!-- 为什么选择我们 -->
-    <div id="whyChooseUs" class="conatiner-fuild">
-      <div class="container">
-        <div class="whyChooseUs-title text-center">
-          <p>为什么选择我们的服务</p>
-          <p>THE REASON TO CHOOSING US</p>
-        </div>
-        <div class="row">
-          <div
-            class="col-xs-12 col-sm-6 col-md-3 server-wrapper"
-            v-for="(item,index) in serverList"
-            :key="index"
-          >
-            <div
-              class="server-block wow slideInUp"
-              onmouseenter="this.style.color='#28f';this.style.borderColor='#28f'"
-              onmouseleave="this.style.color='#666';this.style.borderColor='#ccc'"
-            >
-              <img class="center-block" :src="item.logo" alt="logo">
-              <p class="text-center">{{item.title}}</p>
-              <div
-                class="text-center"
-                v-html="item.content"
-                onmouseenter="this.style.color='#28f'"
-                onmouseleave="this.style.color='#ccc'"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
 </template>
 <script>
@@ -230,7 +224,30 @@ export default {
           title: "核心优势4",
           content: "<p>由技术支持工程师，负责问题解答</p>需求受理及故障受理"
         }
-      ]
+      ],
+      serviceList: [
+                {
+                    id: 'section-1',
+                    title: '软件定制开发',
+                    eng_title: 'Customize App',
+                    img: require('@/assets/img/service1.jpg')
+                },{
+                    id: 'section-2',
+                    title: 'IT外包服务',
+                    eng_title: 'Outsourcing',
+                    img: require('@/assets/img/service2.jpg')
+                },{
+                    id: 'section-3',
+                    title: '网上商城建设',
+                    eng_title: 'eCommerce Site',
+                    img: require('@/assets/img/service3.jpg')
+                },{
+                    id: 'section-4',
+                    title: 'iOS应用定制开发',
+                    eng_title: 'iOS App Dev',
+                    img: require('@/assets/img/service4.jpg')
+                }
+            ]
     };
   },
   mounted() {

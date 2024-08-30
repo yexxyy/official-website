@@ -28,8 +28,6 @@ export default {
 #footer {
   width: 100%;
   height: 100%;
-  color: #fff;
-  background: #474747;
   overflow: hidden;
   text-align: center;
 }
@@ -43,16 +41,16 @@ export default {
   margin-bottom: 20px;
 }
 .address_tel_fax {
-  color: #d3d3d3;
+  color: #666;
   font-size: 14px;
   margin: 10px 0;
 }
 .email_wx {
-  color: #d3d3d3;
+  color: #666;
   font-size: 14px;
 }
 .copy {
-  color: #d3d3d3;
+  color: #666;
   font-size: 14px;
 }
 @media screen and (max-width: 997px) {
