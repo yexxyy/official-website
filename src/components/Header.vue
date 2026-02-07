@@ -6,7 +6,7 @@
       <div class="container">
         <div class="server pull-left">
           <span class="glyphicon"></span>欢迎来电咨询服务
-          <span class="glyphicon glyphicon-earphone"></span>18224010564
+          <span class="glyphicon glyphicon-earphone"></span>18200280142
           <!-- <span class="glyphicon glyphicon-envelope"></span>contact@heexin.cn -->
         </div>
         <div class="shejiao pull-right">

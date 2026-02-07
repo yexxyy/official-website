@@ -4,10 +4,10 @@
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
     <!-- <p class="title">成都云从本图科技有限公司</p> -->
-    
+
     <p class="email_wx">
       <!-- <span>邮箱：contect@heexin.cn</span> -->
-      <span>电话: 18224010564</span>
+      <span>电话: 18200280142</span>
     </p>
     <p class="address_tel_fax">
       <span>地址：中国（四川）自由贸易试验区成都高新区交子北一路88号1栋2单元14层1413号</span>
