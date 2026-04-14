@@ -27,13 +27,20 @@
 </template>
 <script>
 import { WOW } from 'wowjs'
-import BMap from "BMap";
 export default {
   name: "ContactUs",
   data() {
     return {};
   },
   mounted() {
+    var BMap = window.BMap;
+    if (!BMap) {
+      var mapNode = document.getElementById("map");
+      if (mapNode) {
+        mapNode.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#64748b;background:#f8fafc;border-radius:18px;">地图加载失败，请稍后重试</div>';
+      }
+      return;
+    }
     var map = new BMap.Map("map"); // 创建地图实例
     var address = "中国（四川）自由贸易试验区成都高新区交子北一路88号1栋";
     var geocoder = new BMap.Geocoder();
