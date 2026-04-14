@@ -27,19 +27,24 @@ export default {
 </script>
 <style scoped>
 #GoTop {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  z-index: 99999999;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
   cursor: pointer;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4f6bff, #7a5cff);
+  box-shadow: 0 16px 30px rgba(79, 107, 255, 0.24);
 }
 #GoTop > span {
   display: block;
   width: 100%;
   height: 100%;
-  color: rgb(8, 162, 233);
-  font-size: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: center;
 }
 </style>
