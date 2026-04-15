@@ -192,7 +192,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .intro-hero {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 
   .intro-hero h1,

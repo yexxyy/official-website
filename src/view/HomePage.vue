@@ -543,6 +543,10 @@ export default {
     padding: 24px 0 56px;
   }
 
+  .hero-section {
+    padding-top: 32px;
+  }
+
   .hero-copy {
     padding: 8px 0;
   }

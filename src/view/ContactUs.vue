@@ -160,7 +160,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .contact-hero {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 
   .contact-hero h1 {

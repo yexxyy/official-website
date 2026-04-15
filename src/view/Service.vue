@@ -326,7 +326,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .service-hero {
-    padding: 48px 0 20px;
+    padding: 64px 0 20px;
   }
 
   .service-content {

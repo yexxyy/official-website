@@ -16,7 +16,7 @@
         </div>
       </router-link>
 
-      <nav class="nav-list hidden-xs">
+      <nav class="nav-list">
         <router-link
           v-for="(item, index) in navList"
           :key="index"
@@ -27,16 +27,16 @@
         </router-link>
       </nav>
 
-      <router-link class="contact-btn hidden-xs" to="/contactus">立即咨询</router-link>
+      <router-link class="contact-btn" to="/contactus">立即咨询</router-link>
 
-      <button class="menu-btn visible-xs" @click="menuOpen = !menuOpen">
+      <button class="menu-btn" @click="menuOpen = !menuOpen">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
 
-    <div class="mobile-menu visible-xs" v-show="menuOpen">
+    <div class="mobile-menu" v-show="menuOpen">
       <router-link
         v-for="(item, index) in navList"
         :key="index"
@@ -85,6 +85,12 @@ export default {
   background: rgba(247, 249, 252, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+}
+
+@media screen and (max-width: 767px) {
+  #header {
+    background: rgba(247, 249, 252, 0.98);
+  }
 }
 
 .header-top {
@@ -180,7 +186,25 @@ export default {
   box-shadow: 0 14px 28px rgba(79, 107, 255, 0.22);
 }
 
+.nav-list {
+  display: flex;
+  gap: 28px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  color: #fff;
+  background: linear-gradient(135deg, #4f6bff, #7a5cff);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(79, 107, 255, 0.22);
+}
+
 .menu-btn {
+  display: none;
   width: 44px;
   height: 44px;
   padding: 8px;
@@ -198,12 +222,22 @@ export default {
 }
 
 .mobile-menu {
-  padding: 0 16px 16px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background: rgba(247, 249, 252, 0.98);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .mobile-menu a {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 14px 16px;
   color: #334155;
   background: #fff;
@@ -212,6 +246,18 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
   .nav-shell {
     min-height: 72px;
   }

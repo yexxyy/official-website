@@ -219,7 +219,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .job-hero {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 
   .job-hero h1,
