@@ -11,7 +11,12 @@
     <section class="contact-content">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 col-md-4">
+            <div class="wechat-card wow fadeInLeft">
+              <img src="@/assets/img/wecom_qr.png" alt="企业微信二维码">
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-8">
             <div class="map-card wow fadeInRight">
               <div id="map"></div>
             </div>
@@ -94,7 +99,6 @@ export default {
 }
 
 .contact-hero p,
-.contact-form label,
 .contact-meta p {
   color: #5b6475;
 }
@@ -103,13 +107,23 @@ export default {
   padding: 8px 0 80px;
 }
 
-.contact-form,
+.wechat-card,
 .map-card,
 .contact-meta {
   background: #fff;
   border: 1px solid rgba(17, 24, 39, 0.06);
   border-radius: 24px;
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.05);
+}
+
+.wechat-card {
+  padding: 12px;
+}
+
+.wechat-card img {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
 }
 
 .map-card {
@@ -137,6 +151,7 @@ export default {
     font-size: 32px;
   }
 
+  .wechat-card,
   .map-card,
   .contact-meta {
     margin-top: 20px;
